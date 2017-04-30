@@ -1,0 +1,20 @@
+<h2>List of Houses</h2>
+
+<table class="table table-bordered table-striped">
+  <thead>
+    <tr>
+        <th>Name of House</th>
+        <th>Name of Room</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat='house in controller.houses'>
+      <td>
+        <a ui-sref='addHouse'>{{house.name}}</a>
+      </td>
+      <td>{{controller.houses.rooms}}</td>
+      <td>{{room.area}}</td>
+    </tr>
+  </tbody>
+</table>
+<button ui-sref='addHouse'>Add House</button>
